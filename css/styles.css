@@ -1,0 +1,179 @@
+
+/* Variables */
+:root{
+    --first-color:#fff;
+    --second-color:#000;
+    --third-color:#950c17;
+    --fourth-color:#8d8d8d;
+}
+
+/* Global styles */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Segoe UI",SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    background-color: var(--first-color);
+    color: var(--second-color);
+    font-size: .8em;
+    line-height: 1.5;
+}
+
+a{
+    text-decoration: none;
+    color: var(--second-color);
+}
+
+ul,li{
+    list-style-type: none;
+}
+
+.container{
+    width: 97%;
+    margin: auto;
+    max-width: 1100px;
+}
+
+.d-inline-block{
+    display: inline-block;
+}
+
+.banner{
+    width: 100%;
+    padding: 1.1em;
+    text-align: center;
+}
+
+.alert-banner{
+    background-color: var(--third-color);
+    color: #fff;
+    font-weight: 500;
+}
+
+.alert-banner a{
+    cursor: pointer;
+    color: #fff;
+}
+
+.alert-label-outline{
+    color: var(--third-color);
+    font-weight: 500;
+}
+
+.alert-banner a:hover{
+    text-decoration: underline;
+}
+
+.btn{
+    display: inline-block;
+}
+
+.btn-dark{
+    background-color: var(--second-color);
+    color: var(--first-color);
+    font-weight: bold;
+    padding: .6em 1em;
+}
+
+/* Header  */
+.header-navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: .8em;
+    padding: 1.2em 2.5em;
+}
+
+.header-navbar a:hover{
+    padding-bottom: 2px;
+}
+
+.header-navbar a:hover{
+    border-bottom: 2px solid #262626;
+}
+
+.header-navbar i[class*="chevron"]{
+    font-size: .7em;
+    color: var(--fourth-color);
+}
+
+.main-nav{
+    display: flex;
+    margin-right: auto;
+    margin-left: 20px;
+}
+
+.main-nav li{
+    padding: 0 .8em;
+}
+
+.header-logo{
+    width: 90px;
+}
+
+.right-nav{
+    display: flex;
+}
+
+.right-nav > *{
+    padding: 0 .7em;
+}
+
+.search-bar span, .cart span, .sign-in span{
+    display:none;
+}
+
+.right-nav i{
+    margin-left: .5em;
+}
+
+.hero{
+    background: url(../images/sliders/Highlight-Surface-Pro-9-All-Colors-FY23HOL_VP3-1083x600.avif) no-repeat ;
+    background-size: cover;
+    height: 420px;
+    position: relative;
+}
+
+.hero-info{
+    background-color: var(--first-color);
+    padding: 2.5em 3em;
+    position: absolute;
+    bottom: -14em;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    box-shadow: 0 2px 6px lightgrey;
+}
+
+.hero-info > *{
+    margin-bottom: .5em;
+}
+.hero-info span{
+    margin-left: .5em;
+}
+
+.hero-info .btn{
+    margin-top: 1em;
+}
+
+@media screen and (min-width:768px){
+    .search-bar span, .cart span, .sign-in span{
+        display:inline-block;
+    }
+
+    .header-navbar{
+        width: 90%;
+        max-width: 1100px;
+        margin: auto;
+    }
+
+    .container{
+        width: 90%;
+        margin: auto;
+        max-width: 1100px;
+    }
+}
