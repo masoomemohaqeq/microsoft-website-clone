@@ -175,13 +175,17 @@ ul,li{
 
 /* Hero slider */
 .hero{
-    height: 630px;
+    /* height: 630px; */
     position: relative;
     border-color: red;
 }
 
 .hero-img{
     width: 100%;
+}
+
+.swiper{
+    overflow: visible;
 }
 
 .swiper-wrapper{
@@ -192,12 +196,12 @@ ul,li{
 .hero-info{
     background-color: var(--first-color);
     padding: 1.5em 3em 1em;
-    position: absolute;
+    /* position: absolute;
     bottom: 3.5em;
     margin-left: auto;
     margin-right: auto;
     left: 0;
-    right: 0;
+    right: 0; */
     box-shadow: 0 2px 6px lightgrey;
 }
 
@@ -217,15 +221,15 @@ ul,li{
     text-align: center;
     width: 100%;
     height: 45px;
-    position: absolute;
-    bottom: 0;
+     position: relative;
+    /*bottom: 0; */
     display: flex;
     justify-content: center;
 }
 
 .hero-controllers .swiper-pagination-bullets.swiper-pagination-horizontal{
     width: fit-content;
-    top:30%;
+    /* top:30%; */
     margin-left: auto;
     margin-right: auto;
     left: 0;
@@ -441,6 +445,12 @@ ul,li{
     .hero-info{
         width: 98%;
         padding: 2.5em 3em;
+        position: absolute;
+        bottom: 3.5em;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
     }
 
     .hero-controllers .swiper-button-next{
