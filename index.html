@@ -5,21 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Styles -->
-    <link rel="stylesheet" href="./css/styles.css" />
-
     <!-- Font awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     />
 
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/styles.css" />
+
     <title>Microsoft - Cloud, Computers, Apps & Gaming</title>
   </head>
   <body>
+    <!-- Header -->
     <header>
+      <!-- Top Navbar  -->
       <nav class="header-navbar">
-        <img class="header-logo" src="./images/logo.png" alt="logo" />
+        <img class="logo header-logo" src="./images/logo.png" alt="logo" />
         <ul class="main-nav">
           <li><a href="#">Microsoft 365</a></li>
           <li><a href="#">Teams</a></li>
@@ -39,23 +47,32 @@
               ></a>
             </li>
           </ul>
+          <div class="ham-menu">
+            <i class="fa-solid fa-bars"></i>
+          </div>
           <div class="search-bar">
             <a href="#">
-              <span>Search</span><i class="fa-solid fa-magnifying-glass"></i
+              <span>Search</span>
+              <i class="fa-solid fa-magnifying-glass"></i
             ></a>
           </div>
+          <img class="logo header-sm-logo" src="./images/logo.png" alt="logo" />
           <div class="cart">
             <a href="#">
-              <span>Cart</span> <i class="fa-solid fa-cart-shopping"></i
+              <span>Cart</span>
+              <i class="fa-solid fa-cart-shopping"></i
             ></a>
           </div>
           <div class="sign-in">
             <a href="#">
-              <span>Sign in</span> <i class="fa-solid fa-user-plus"></i
+              <span>Sign in</span>
+              <i class="fa-solid fa-user-plus"></i
             ></a>
           </div>
         </div>
       </nav>
+
+      <!-- Banner -->
       <div class="banner alert-banner">
         <a>
           Find deals on top tech. Due to extreme weather, shipping may take
@@ -63,17 +80,305 @@
           <i class="fa-solid fa-chevron-right"></i>
         </a>
       </div>
-      <div class="hero">
-        <div class="hero-info container">
-          <span class="d-inline-block alert-label-outline">New</span><br />
-          <h2>Surface Pro 9</h2>
-          <p>
-            Keep spirits bright with a game-changing combo of laptop power and
-            tablet flexibility—all in one ultra-portable device
-          </p>
-          <a href="#" class="btn btn-dark">Shop now</a>
+
+      <!-- Hero Slider -->
+      <div class="hero-wrapper">
+        <div class="hero swiper">
+          <div class="swiper-wrapper">
+            <div class="hero-slide swiper-slide">
+              <img
+                class="hero-img sm-img"
+                src="./images/sliders/Highlight-Surface-Pro-9-All-Colors-FY23HOL_VP1-539x440.avif"
+              />
+              <img
+                class="hero-img md-img"
+                src="./images/sliders/Highlight-Surface-Pro-9-All-Colors-FY23HOL_VP3-1083x600.avif"
+              />
+              <img
+                class="hero-img lg-img"
+                src="./images/sliders/Highlight-Surface-Pro-9-All-Colors-FY23HOL_VP2-859x540.avif"
+              />
+              <div class="hero-info">
+                <span class="d-inline-block alert-label-light">New</span><br />
+                <h2>Surface Pro 9 -1</h2>
+                <p>
+                  Keep spirits bright with a game-changing combo of laptop power
+                  and tablet flexibility—all in one ultra-portable device
+                </p>
+                <a href="#" class="btn btn-dark">Shop now</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="hero-img sm-img"
+                src="./images/sliders/Highlight-PC-GamePass-Light-FY23HOL_VP1-539x440.avif"
+              />
+              <img
+                class="hero-img md-img"
+                src="./images/sliders/Highlight-PC-GamePass-Light-FY23HOL_VP3-1083x600.webp"
+              />
+              <img
+                class="hero-img lg-img"
+                src="./images/sliders/Highlight-PC-GamePass-Light-FY23HOL_VP2-859x540.avif"
+              />
+              <div class="hero-info">
+                <span class="d-inline-block alert-label-light">New</span><br />
+                <h2>Surface Pro 9 -2</h2>
+                <p>
+                  Keep spirits bright with a game-changing combo of laptop power
+                  and tablet flexibility—all in one ultra-portable device
+                </p>
+                <a href="#" class="btn btn-dark">Shop now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-controllers">
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-next"></div>
         </div>
       </div>
     </header>
+
+    <!-- Main -->
+    <main>
+      <!-- Links Area -->
+      <section class="links-area">
+        <div class="link-box">
+          <img src="./images/icons/surface-go2-link-list-120x120.webp" />
+          <a href="#">Shop Surface devices</a>
+        </div>
+        <div class="link-box">
+          <img src="./images/icons/xbox-blk-logo-link-list-120x120.webp" />
+          <a href="#">Buy Xbox games and consoles</a>
+        </div>
+        <div class="link-box">
+          <img
+            src="./images/icons/gldn-Quick-Link-Icon-80x80-Microsoft-365.webp"
+          />
+          <a href="#">Choose your Microsoft 365</a>
+        </div>
+        <div class="link-box">
+          <img
+            src="./images/icons/gldn-Quick-Link-Icon-80x80-Microsoft-365.webp"
+          />
+          <a href="#">Get Windows 11</a>
+        </div>
+        <div class="link-box">
+          <img src="./images/icons/keyboard-mouse-link-list-120x120.webp" />
+          <a href="#">Shop for accessories</a>
+        </div>
+        <div class="link-box">
+          <img src="./images/icons/gldn-ICON-LL-briefcase-120x120.webp" />
+          <a href="#">Shop Business</a>
+        </div>
+      </section>
+
+      <!-- Cards Area -->
+      <section class="cards-area container">
+        <div class="card">
+          <img
+            src="./images/cards/Content-Card-Surface-Laptop-5-Platinum-Alcantara-FY23HOL.avif"
+            alt="img"
+            class="card-img"
+          />
+          <div class="card-content">
+            <span class="alert-label">New</span>
+            <h2>Surface Laptop 5</h2>
+            <p>
+              Sophisticated style and multitasking speed powered by 12th Gen
+              Intel® Core™ i5/i7 processors built on the Intel® Evo™ platform
+              make this the perfect gift.
+            </p>
+            <div class="card-links">
+              <a href="#" class="btn btn-light"
+                >Shop Now <i class="fa-solid fa-chevron-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="./images/cards/Content-Card-Surface-Go-3-FY23HOL.avif"
+            alt="img"
+            class="card-img"
+          />
+          <div class="card-content">
+            <h2>Select Surface Go 3, up to $70 off</h2>
+            <p>
+              Share endless wonder, wherever you are, with the most portable
+              Surface touchscreen 2-in-1—perfect for work, play, and beyond.
+              Offer ends 1/8.
+            </p>
+            <div class="card-links">
+              <a href="#" class="btn btn-light"
+                >Shop Now <i class="fa-solid fa-chevron-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="./images/cards/Content-Card-Xbox-Series-X-S-FY23HOL.avif"
+            alt="img"
+            class="card-img"
+          />
+          <div class="card-content">
+            <h2>Unwrap adventure</h2>
+            <p>
+              Put a bow on next-gen performance with Xbox Series X and Xbox
+              Series S.
+            </p>
+            <div class="card-links">
+              <a href="#" class="btn btn-light"
+                >Shop Xbox Series X <i class="fa-solid fa-chevron-right"></i
+              ></a>
+
+              <a href="#" class="btn btn-light"
+                >Shop Xbox Series S <i class="fa-solid fa-chevron-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="./images/cards/Content-Card-Surface-Headphones-Black-Earbuds-Glacier-FY23HOL.avif"
+            alt="img"
+            class="card-img"
+          />
+          <div class="card-content">
+            <h2>A sound gift</h2>
+            <p>
+              From silent nights to party playlists, they’ll never miss a beat
+              with premium audio from Surface.
+            </p>
+
+            <div class="card-links">
+              <a href="#" class="btn btn-light"
+                >Shop Surface Earbuds <i class="fa-solid fa-chevron-right"></i
+              ></a>
+              <a href="#" class="btn btn-light"
+                >Shop Surface Headphones 2
+                <i class="fa-solid fa-chevron-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <nav class="footer-cat-nav">
+          <div>
+            <h4 class="footer-cat-nav-header">Whats new</h4>
+            <ul class="footer-cat-nav-link">
+              <li><a href="#">Surface Pro 9</a></li>
+              <li><a href="#">Surface Laptop 5</a></li>
+              <li><a href="#">Surface Studio 2+</a></li>
+              <li><a href="#">Surface Laptop Go 2</a></li>
+              <li><a href="#">Surface Laptop Studio</a></li>
+              <li><a href="#">Microsoft 365</a></li>
+              <li><a href="#">Windows 11 apps</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="footer-cat-nav-header">Microsoft Store</h4>
+            <ul class="footer-cat-nav-link">
+              <li><a href="#">Account profile</a></li>
+              <li><a href="#">Download Center</a></li>
+              <li><a href="#">Microsoft Store support</a></li>
+              <li><a href="#">Returns</a></li>
+              <li><a href="#">Order tracking</a></li>
+              <li><a href="#">Personal shopping appointments</a></li>
+              <li><a href="#">Microsoft Store Promise</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="footer-cat-nav-header">Whats new</h4>
+            <ul class="footer-cat-nav-link">
+              <li><a href="#">Surface Pro 9</a></li>
+              <li><a href="#">Surface Laptop 5</a></li>
+              <li><a href="#">Surface Studio 2+</a></li>
+              <li><a href="#">Surface Laptop Go 2</a></li>
+              <li><a href="#">Surface Laptop Studio</a></li>
+              <li><a href="#">Microsoft 365</a></li>
+              <li><a href="#">Windows 11 apps</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="footer-cat-nav-header">Microsoft Store</h4>
+            <ul class="footer-cat-nav-link">
+              <li><a href="#">Account profile</a></li>
+              <li><a href="#">Download Center</a></li>
+              <li><a href="#">Microsoft Store support</a></li>
+              <li><a href="#">Returns</a></li>
+              <li><a href="#">Order tracking</a></li>
+              <li><a href="#">Personal shopping appointments</a></li>
+              <li><a href="#">Microsoft Store Promise</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="footer-cat-nav-header">Whats new</h4>
+            <ul class="footer-cat-nav-link">
+              <li><a href="#">Surface Pro 9</a></li>
+              <li><a href="#">Surface Laptop 5</a></li>
+              <li><a href="#">Surface Studio 2+</a></li>
+              <li><a href="#">Surface Laptop Go 2</a></li>
+              <li><a href="#">Surface Laptop Studio</a></li>
+              <li><a href="#">Microsoft 365</a></li>
+              <li><a href="#">Windows 11 apps</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="footer-cat-nav-header">Microsoft Store</h4>
+            <ul class="footer-cat-nav-link">
+              <li><a href="#">Account profile</a></li>
+              <li><a href="#">Download Center</a></li>
+              <li><a href="#">Microsoft Store support</a></li>
+              <li><a href="#">Returns</a></li>
+              <li><a href="#">Order tracking</a></li>
+              <li><a href="#">Personal shopping appointments</a></li>
+              <li><a href="#">Microsoft Store Promise</a></li>
+            </ul>
+          </div>
+        </nav>
+        <nav class="footer-nav">
+          <div class="footer-nav-name">
+            <i class="fa-solid fa-globe"></i> English(United States)
+          </div>
+          <ul>
+            <li><a href="#">Sitemap</a></li>
+            <li><a href="#">Contact Microsoft</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Manage cookies</a></li>
+            <li><a href="#">Terms of use</a></li>
+            <li><a href="#">Sitemap</a></li>
+            <li><a href="#">Contact Microsoft</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Manage cookies</a></li>
+            <li><a href="#">Terms of use</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".swiper", {
+        // spaceBetween: 30,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
   </body>
 </html>
