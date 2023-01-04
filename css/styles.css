@@ -31,6 +31,10 @@ ul,li{
     list-style-type: none;
 }
 
+input{
+    outline: none;
+}
+
 .container{
     width: 95%;
     margin: auto;
@@ -112,14 +116,15 @@ ul,li{
     align-items: center;
     font-size: .8em;
     padding: 1.5em .5em;
+    height: 54px;
 }
 
 .header-navbar a:hover{
     padding-bottom: 2px;
 }
 
-.header-navbar a:hover{
-    border-bottom: 2px solid #262626;
+.header-navbar i{
+    color: var(--fourth-color);
 }
 
 .header-navbar i[class*="chevron"]{
@@ -164,7 +169,7 @@ ul,li{
     padding: 0 .7em;
 }
 
-.search-bar span, .cart span, .sign-in span{
+.search-bar span, .full-search-bar span, .cart span, .sign-in span{
     display:none;
 }
 
@@ -173,6 +178,43 @@ ul,li{
     font-size: 1.3em;
 }
 
+.full-search-bar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 54px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    display: none;
+}
+
+.search-cancel-btn{
+    margin-right: 1em;
+}
+
+.search-bar button, .search-btn{
+    background-color: white;
+    border: none;
+    outline: none;
+}
+
+.search-from{
+    width: 95%;
+    border: 1px solid var(--fourth-color);
+}
+
+.search-btn{
+    display: inline-block;
+    margin-right: 1.2em;
+}
+
+.input-field{
+    height: 35px;
+    border: none;
+}
 
 /* Hero slider */
 .hero{
@@ -214,14 +256,12 @@ ul,li{
     width: 100%;
     height: 45px;
      position: relative;
-    /*bottom: 0; */
     display: flex;
     justify-content: center;
 }
 
 .hero-controllers .swiper-pagination-bullets.swiper-pagination-horizontal{
     width: fit-content;
-    /* top:30%; */
     margin-left: auto;
     margin-right: auto;
     left: 0;
@@ -427,7 +467,6 @@ ul,li{
     .header-navbar{
         width: 95%;
         margin: auto;
-        height: 54px;
     }
     
     .right-nav i{
@@ -437,6 +476,7 @@ ul,li{
     .hero{
         height:820px;
     }
+
     .hero-info{
         width: 98%;
         padding: 2.5em 3em;
@@ -455,7 +495,34 @@ ul,li{
     .hero-controllers .swiper-button-prev{
         left: 40%;
     }
+
+    .full-search-bar{
+        flex-direction: row-reverse;
+        width: 84%;
+        right: 0;
+        left: auto;
+    }
+
+    .search-from{
+        flex-direction: row-reverse;
+    }
     
+    .search-cancel-btn i{
+        display: none;
+    }
+
+    .search-cancel-btn span{
+        display: inline-block;
+    }
+
+    .search-cancel-btn{
+        height: 35px;
+        padding: 0 1em;
+        border-radius: 0;
+        margin-left: .5em;
+        background-color: transparent;
+    }
+
     .cards-area{
         grid-template-columns: repeat(2, 1fr);
     }
@@ -463,17 +530,20 @@ ul,li{
     .footer-nav > :nth-child(odd){
         margin-right: 2em;
     }
-
 }
 
 @media (min-width:1200px){
     
-    body{
+    body, input, button{
         font-size: .9em;
     }
 
     .header-navbar{
         width: 85%;
+    }
+
+    .header-navbar a:hover{
+        border-bottom: 2px solid #262626;
     }
 
     .hero-wrapper{
