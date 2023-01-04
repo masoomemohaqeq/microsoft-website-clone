@@ -1,0 +1,36 @@
+
+
+.hamburger-btn-wrapper{
+    position: relative;
+}
+
+.hamburger-check{
+    position: absolute;
+    opacity: 0;
+}
+
+.hamburger-menu{
+    position: absolute;
+    background-color: rgb(243, 243, 243);
+    top: 54px;
+    left: 0;
+    width: 100vw;
+    min-height: 100vh;
+    z-index: 100;
+    display: none;
+    border: 1px solid rgb(226, 226, 226);
+}
+
+.hamburger-menu li{
+    font-size: 1.2em;
+    padding: 1em;
+    border-top: 1px solid rgb(226, 226, 226);
+} 
+
+.hamburger input:checked ~ .hamburger-menu{
+    display: block;
+}
+
+.hamburger input:checked + .hamburger-btn:before{
+    content:"\f00d";
+}

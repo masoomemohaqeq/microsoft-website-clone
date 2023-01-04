@@ -173,6 +173,7 @@ ul,li{
     font-size: 1.3em;
 }
 
+
 /* Hero slider */
 .hero{
     /* height: 630px; */
@@ -415,7 +416,7 @@ ul,li{
         display: inline-block;
     }
 
-    .ham-menu{
+    .hamburger{
         display: none;
     }
 
@@ -426,6 +427,7 @@ ul,li{
     .header-navbar{
         width: 95%;
         margin: auto;
+        height: 54px;
     }
     
     .right-nav i{
