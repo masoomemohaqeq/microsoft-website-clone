@@ -184,10 +184,6 @@ ul,li{
     width: 100%;
 }
 
-.swiper{
-    overflow: visible;
-}
-
 .swiper-wrapper{
     width: 100%;
     height: 100%;
@@ -196,12 +192,7 @@ ul,li{
 .hero-info{
     background-color: var(--first-color);
     padding: 1.5em 3em 1em;
-    /* position: absolute;
-    bottom: 3.5em;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0; */
+    border-bottom: 1px solid #f3f2f2;
     box-shadow: 0 2px 6px lightgrey;
 }
 
@@ -385,6 +376,7 @@ ul,li{
     .footer-cat-nav{
         grid-template-columns: repeat(3,1fr);
     }
+    
 }
 
 @media (min-width:768px){
@@ -400,6 +392,7 @@ ul,li{
     .md-img{
         display: block;
     }
+    
 }
 
 @media screen and (min-width:992px){
@@ -468,6 +461,7 @@ ul,li{
     .footer-nav > :nth-child(odd){
         margin-right: 2em;
     }
+
 }
 
 @media (min-width:1200px){
