@@ -5,7 +5,8 @@
     --second-color:#000;
     --third-color:#950c17;
     --fourth-color:#8d8d8d;
-    
+    --fifth-color:#f2f2f2;
+    --sixth-color:#616161;
     --container-max-width:1250px;
 }
 
@@ -142,7 +143,7 @@ input{
     padding: 0 .8em;
 }
 
-.all-nav{
+.hover-menu{
     display: none;
 }
 
@@ -155,7 +156,7 @@ input{
 }
 
 .right-nav{
-     display: grid;
+    display: grid;
     grid-template-columns: repeat(13,1fr);
     grid-template-rows: 1fr;
     width: 100%;
@@ -191,6 +192,7 @@ input{
     justify-content: space-between;
     align-items: center;
     display: none;
+    z-index: 12;
 }
 
 .full-search-bar .logo{
@@ -220,6 +222,45 @@ input{
 .input-field{
     height: 35px;
     border: none;
+}
+
+/* Hover Menu */
+.hover-menu{
+    position: relative;
+    z-index: 11;
+}
+
+.hover-menu-wrapper{
+    background-color: var(--fifth-color);
+    position: absolute;
+    width: 80vw;
+    top: 30px;
+    right: -40px;
+    line-height: 2.8em;
+    padding: 1.5em;
+    border: 1px solid #dfdfdf;
+    flex-wrap: wrap;
+    display: none;
+}
+
+.hover-menu-wrapper>div{
+    padding-right: 5em;
+}
+
+.hover-menu-checkbox{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.hover-menu input:checked ~ .hover-menu-wrapper{
+    display: flex;
+}
+
+.hover-menu input:checked + .hover-btn i:before{
+    content: "\f078";
 }
 
 /* Hero slider */
@@ -381,16 +422,15 @@ input{
 
 /* Footer */
 .footer{
-    background-color: #f2f2f2;
-    color:#616161;
+    background-color: var(--fifth-color);
+    color:var(--sixth-color);
     padding: 0 1.5em;
     line-height: 1.8em;
     font-size: .9em;
 }
 
 .footer a{
-    color:#616161;
-    color:#616161;
+    color:var(--sixth-color);
     font-size: .7em;
 }
 
@@ -503,6 +543,7 @@ input{
     }
 
     .full-search-bar{
+        justify-content: end;
         width: 95%;
         margin-left: auto;
         margin-right: auto;
@@ -512,6 +553,7 @@ input{
     
     .search-logo{
         order: 1;
+        margin-right: auto;
     }
 
     .search-cancel-btn{
@@ -574,6 +616,10 @@ input{
         width: 80%;
     }
     
+    .hover-menu-wrapper{
+        width: 60vw;
+    }
+
     .header-navbar a:hover{
         border-bottom: 2px solid #262626;
     }
