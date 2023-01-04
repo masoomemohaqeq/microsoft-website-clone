@@ -69,10 +69,29 @@
             </ul>
           </div>
           <div class="search-bar">
-            <a href="#">
+            <button id="search-btn">
               <span>Search</span>
-              <i class="fa-solid fa-magnifying-glass"></i
-            ></a>
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+          <div class="full-search-bar" id="full-search-bar">
+            <button class="search-cancel-btn" id="search-cancel-btn">
+              <span>Cancel</span>
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+            <form class="search-from">
+              <button class="search-btn">
+                <span>Search</span>
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+              <input
+                type="text"
+                name="keyword"
+                id="keyword"
+                class="input-field"
+                placeholder="Search Microsoft.com"
+              />
+            </form>
           </div>
           <img class="logo header-sm-logo" src="./images/logo.png" alt="logo" />
           <div class="cart">
@@ -381,6 +400,9 @@
         </nav>
       </div>
     </footer>
+    <!-- Custom Styles -->
+    <script src="./js/index.js"></script>
+
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
