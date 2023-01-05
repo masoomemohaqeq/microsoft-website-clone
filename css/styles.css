@@ -265,9 +265,9 @@ input{
 
 /* Hero slider */
 .hero{
-    /* height: 630px; */
     position: relative;
     border-color: red;
+    max-width: 1920px;
 }
 
 .hero-img{
@@ -502,6 +502,10 @@ input{
         display: inline-block;
     }
 
+    .full-search-bar{
+        display: none;
+    }
+    
     .hamburger{
         display: none;
     }
@@ -629,15 +633,23 @@ input{
     }
 
     .hero {
-        background-color: #f4f4f6;
-        height: 350px;
+        height: 400px;
+    }
+
+    .hero-info{
+        border: none;
+    }
+
+    .hero-info-text-light{
+        color: white;
     }
 
     .hero-img{
-        width: auto;
-        height: 400px;  
+        width: 100%;
+        height: auto;  
         position: absolute;
         right: 0;
+        top: -35px;
     }
 
     .hero-info{
